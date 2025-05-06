@@ -9,7 +9,7 @@ func main() {
 
 	//
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		_, _ = fmt.Fprintln(w, "Too strong!")
+		_, _ = fmt.Fprintln(w, "Kiss me!")
 	})
 
 	//
