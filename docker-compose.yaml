@@ -1,0 +1,16 @@
+services:
+  web:
+    container_name: "brdriver-master"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app
+      - /app/bin
+    ports:
+      - '4000:4000'
+    networks:
+      - local
+
+networks:
+  local:
